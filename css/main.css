@@ -1,0 +1,1462 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'hiruzen_existregular';
+    src: url('hiruzen_exist.woff2') format('woff2'),
+         url('hiruzen_exist.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+img, embed, object, video
+{
+  max-width: 100%;
+}
+
+html
+{
+  box-sizing: border-box;
+}
+
+*, *::before, *::after
+{
+  box-sizing: inherit;
+}
+
+body
+{
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	background-color: #fff;
+	font-size: 100%;
+}
+
+h2
+{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  font-size:2em;
+  letter-spacing: .1em;
+}
+
+h3
+{
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bold;
+  font-size:1.5em;
+  letter-spacing: .1em;
+  color: #8fc004;
+  line-height: 30px;
+}
+
+p
+{
+  line-height: 1.8em;
+}
+
+a
+{
+  text-decoration: none;
+  color:#ffffff;
+  transition:all .1s linear 0s;
+}
+
+a:hover
+{
+text-decoration:underline;
+}
+
+li
+{
+  font-family: 'Raleway', sans-serif;
+}
+
+
+hr
+{
+ color: #8fc004;
+ margin-top: 40px;
+}
+
+/* Class */
+
+.hidden
+{
+  display: none;
+}
+
+
+.bottleBig
+{
+  display: none;
+}
+
+
+.welcome
+{
+padding:260px 0 0 20px;
+width: 50%;
+}
+
+.welcomeText
+{
+  color:#fff;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bolder;
+  font-size: 1.7em;
+  line-height: 25px;
+  letter-spacing: 4px;
+  text-shadow: -2px 2px 4px #000000;
+  margin-bottom: 20px;
+}
+
+.welcomebut
+{
+  border: solid 1px #fff;
+  background-color: rgba(143,192,4,.4);
+	display: block;
+	width: 120px;
+	color: #fff;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.welcomebut:hover
+{
+  background-color: rgba(143,192,4,.2);
+}
+
+.flavourPic
+{
+	padding-top: 10px;
+	height: 300px;
+	background-image: url(../images/pinacolada-m.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.pinacolada
+{
+  color: #000000;
+  letter-spacing: .2em;
+  font-size:1.5em;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 110px;
+  width:50%;
+  animation: pina 3s ease alternate infinite;
+  font-family: hiruzen_existregular;
+}
+
+@keyframes pina {
+  90% {
+    transform: scale(1.0);
+  }
+  100% {
+    transform: scale(1.3);
+  }
+}
+
+.flavourText
+{
+  margin: 30px 10px 0 10px;
+}
+
+.brewText
+{
+  margin: 30px 10px 0 10px;
+}
+
+.bold
+{
+  font-size: 18px;
+  color:#0f6655;
+}
+
+.promoText
+{
+padding-top: 40px;
+}
+
+.promoText1
+{
+margin-top: 40px;
+background-color: #698d03;
+padding:20px;
+color: #ffffff;
+}
+
+.promoHead
+{
+  color: #ffffff;
+}
+
+.promoP
+{
+  margin: 20px 10px 0 10px;
+}
+
+
+.footermenu
+{
+  text-align: center;
+}
+
+.footermenu li
+{
+  padding-bottom: 10px;
+}
+
+.footermenu2
+{
+  text-align: center;
+}
+
+.footermenu2 li
+{
+  padding-bottom: 10px;
+}
+
+
+
+/* ID */
+
+#container
+{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+
+#products2
+{
+  display: none;
+}
+
+#mainHeader
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(65, 65, 65, 0.8);
+  position:relative;
+  top:0;
+  z-index: 2;
+}
+
+#burgerCon
+{
+  display: none;
+}
+
+#burgerCon.slideToggle
+{
+  display: block;
+  position:absolute;
+}
+
+#navCon button
+{
+  background: url(../images/burger.svg) center no-repeat;
+  border: 0px;
+  width: 20px;
+  height: 20px;
+  transition: all 400ms ease;
+  margin:25px 20px 0 0;
+}
+
+
+ #mainNav
+ {
+  display: block;
+  color: #ffffff;
+  background-color: rgba(65, 65, 65, 0.8);
+  margin-top:35px;
+  margin-left: -140px;
+  text-align: center;
+}
+
+#mainNav li
+ {
+  padding:20px 30px 20px 30px;
+  font-weight: bold;
+  font-size: 14px;
+ }
+
+#mainNav li:last-child { border-bottom: none;}
+#mainNav li a:hover { color: #8fc004; }
+li .current {color:#8fc004;}
+
+
+#logo
+{
+margin: 10px 0 10px 10px;
+}
+
+#logoDesktop
+{
+  display: none;
+}
+
+
+#featuredImage
+{
+  margin: auto;
+  margin-top: -80px;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/pro1-m.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  height:516px;
+}
+
+#flavour
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#featuredText
+{
+margin-top: 40px;
+text-align: center;
+}
+
+#brewSec
+{
+margin-top: 40px;
+text-align: center;
+}
+
+
+#promoCon
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+#mainFooter
+{
+  display: flex;
+  flex-direction: column;
+  height:370px;
+  margin: 0 auto;
+  background-image: linear-gradient(#8dbe03,#414141);
+  margin-top: 60px;
+  padding-top: 30px;
+}
+
+#mainFooter a
+{
+  color:#ffffff;
+  font-size: .7em;
+  text-decoration: none;
+}
+
+#mainFooter a:hover
+{
+  color:#000000;
+}
+
+#socialMedia
+{
+  display: flex;
+  flex-direction: row;
+  padding-top:30px;
+  justify-content: center;
+}
+#socialMedia li
+{
+  padding-left: 30px;
+}
+
+@media screen and (min-width: 540px) {
+
+  .welcome
+  {
+    padding:280px 0 0 20px;
+  }
+}
+
+@media screen and ( min-width: 630px) {
+
+  .welcome
+  {
+    padding:310px 0 0 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #burgerCon
+  {
+    display: block;
+  }
+
+  #button
+  {
+    display: none;
+  }
+
+  #mainHeader
+  {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(65, 65, 65, 0.8);
+    margin: 0px auto;
+    max-width:1140px;
+  }
+
+  #logo
+  {
+    margin-right: auto;
+    padding: 10px 0 0 20px;
+  }
+
+
+  #mainNav
+  {
+    display: flex;
+    flex-direction: row;
+    background-color:transparent;
+    margin-right: 15px;
+  }
+
+  #mainNav li
+   {
+    padding:0 10px 0 10px;
+    font-weight: bold;
+    margin-left: 10px;
+   }
+
+  .navItem a
+  {
+    font-size: 14px;
+  }
+
+  #featuredImage
+  {
+    background-image: url(../images/pro1-Ipad.jpg);
+    height:833px;
+  }
+
+  .welcome
+  {
+  padding:400px 0 0 40px;
+  width: 40%;
+  }
+
+  .welcomeText
+  {
+    font-size: 2.5em;
+    line-height: 45px;
+  }
+
+  .welcomebut
+  {
+  	width: 150px;
+  	padding: 15px 0;
+  	font-size: 18px;
+  }
+
+  .flavourPic
+  {
+  	height: 460px;
+  	background-image: url(../images/pinacolada.jpg);
+  }
+
+  .pinacolada
+  {
+    letter-spacing: .2em;
+    font-size:2em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 190px;
+    width:50%;
+  }
+
+  #mainFooter
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height:200px;
+    margin: 0 auto;
+    background-image: linear-gradient(#8dbe03,#414141);
+    margin-top: 60px;
+    padding-top: 20px;
+  }
+
+  .footermenu
+  {
+    flex-direction:column;
+    padding-left: 60px;
+  }
+
+  .footermenu2
+  {
+    flex-direction:column;
+  }
+
+  .footermenu2 li
+  {
+    padding-bottom: 20px;
+  }
+
+  .footermenu li
+  {
+    padding-bottom: 20px;
+  }
+
+  #socialMedia
+  {
+    display: flex;
+    flex-direction: row;
+    padding-top:50px;
+    padding-right: 60px;
+
+  }
+  #socialMedia li
+  {
+    padding-left: 30px;
+  }
+}
+
+  @media screen and (min-width: 970px) {
+
+    .welcome
+    {
+    padding:500px 0 0 40px;
+    width: 50%;
+    }
+  }
+
+
+  @media screen and (min-width: 1140px) {
+
+    h3
+    {
+      font-size:1.8em;
+    }
+
+    #mainHeader
+    {
+      display: flex;
+      flex-direction: row;
+      background-color: rgba(65, 65, 65, 0.8);
+      margin: 0px auto;
+      max-width:1200px;
+      height:100px;
+    }
+
+    #logo
+    {
+      display: none;
+    }
+
+    #logoDesktop
+    {
+      display: block;
+      margin-right: auto;
+      padding: 20px 0 0 20px;
+    }
+
+    #mainNav
+    {
+      display: flex;
+      flex-direction: row;
+      background-color:transparent;
+      margin-right: 25px;
+    }
+
+    #mainNav li
+     {
+      padding:0 10px 0 10px;
+      margin: 5px 0 0 20px;
+     }
+
+     .navItem a
+     {
+       font-size: 18px;
+     }
+
+
+    #featuredImage
+    {
+      background-image: url(../images/pro1.jpg);
+      height:1000px;
+      margin-top: -100px;
+    }
+
+    .welcome
+    {
+    padding:600px 0 0 40px;
+    }
+
+    .welcomeText
+    {
+      font-size: 3em;
+      line-height: 55px;
+    }
+
+    .welcomebut
+    {
+    	width: 200px;
+    	padding: 25px 0;
+    	font-size: 22px;
+    }
+
+    #brewSec
+    {
+      width:700px;
+      margin: 0px auto;
+      margin-top: 60px;
+    }
+
+    #flavour
+    {
+      width:700px;
+      margin: 0px auto;
+      margin-top: 60px;
+    }
+
+    .promoText
+    {
+      width:700px;
+      margin: 0px auto;
+      margin-top: 60px;
+    }
+
+    .promoText1
+    {
+      width:700px;
+      margin: 0px auto;
+      margin-top: 60px;
+    }
+
+    .footermenu
+    {
+      padding-left: 150px;
+    }
+
+    #socialMedia
+    {
+      padding-right: 150px;
+    }
+  }
+
+
+/*////////////////PRODUCTS PAGE////////////////////*/
+
+
+#featuredProductImage
+{
+  margin: auto;
+  margin-top: -80px;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/products-m.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  height:516px;
+}
+
+.productsWelcome
+{
+  padding:320px 0px 0 10px;
+  width: 53%;
+}
+
+.productGreeting
+{
+  font-size: 20px;
+  text-align: right;
+  line-height: 20px;
+}
+
+.productGreeting2
+{
+  color:#fff;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bolder;
+  font-size: 1.7em;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-shadow: -2px 2px 4px #000000;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-top: 5px;
+}
+
+.bottleBox{
+  display:flex;
+  justify-content: center;
+  background-image: url(../images/product-page-background-m1.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  height:325px;
+  margin-top: 60px;
+  position: relative;
+}
+
+.boxTransparent
+{
+ display: flex;
+ justify-content: center;
+ margin: auto;
+ position: relative;
+ background-color: rgba(255,255,255,.7);
+ width:50%;
+ animation: fading 5s infinite;
+}
+
+.jsTrans
+{
+width:100%;
+text-align: center;
+}
+
+@keyframes fading {
+  0% {background-color: rgba(255,255,255,.3);}
+  50% {background-color: rgba(255,255,255,.7);}
+  100% {background-color: rgba(255,255,255,.3);}
+}
+
+.boxSecond
+{
+    animation-delay: -3s;
+}
+
+.boxButton
+{
+  border: solid 1px #fff;
+  background-color: rgba(182,212,51,.7);
+  display: block;
+  width: 150px;
+  color: #000;
+  padding: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: hiruzen_existregular;
+  letter-spacing: 1px;
+  position: absolute;
+  top:300px;
+}
+
+.boxButton:hover
+{
+    background-color: rgba(182,212,51,1);
+    color: #fff;
+}
+
+.background
+{
+  background-color: rgba(232,222,148,.7);
+  width: 100%;
+  text-align: center;
+}
+
+.no2
+{
+  background-color: rgba(182,212,51,.7);
+}
+
+.no3
+{
+  background-color: rgba(204,113,146,.7);
+}
+
+.jsHead
+{
+  font-size: 20px;
+  font-family: hiruzen_existregular;
+  padding: 5px 10px 5px 10px;
+  color:#000;
+}
+
+.jsText
+{
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.loyalBut
+{
+  border: solid 1px #fff;
+  background-color: rgba(255,255,255,.7);
+	display: block;
+	width: 200px;
+	color: #000;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+  font-family: arial, helvetica, sans-serif;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#promoCon2
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+#cheers{
+  text-align: center;
+}
+
+.cheersPhoto
+{
+  margin: 0 auto;
+}
+
+#brewSec1
+{
+margin-top: 40px;
+text-align: center;
+}
+
+.jsChangingHead
+{
+  font-family: hiruzen_existregular;
+  font-size: 1.8em;
+  color: #000000;
+  margin-top: 60px;
+}
+
+
+@media screen and ( min-width: 768px) {
+
+  #featuredProductImage {
+    background-image: url(../images/products-Ipad.jpg);
+    height:833px;
+  }
+
+  #products{
+    display: none;
+  }
+
+  #products2
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(../images/product-page-background-ipad.jpg);
+    margin: auto;
+    background-repeat: no-repeat;
+  	background-position: center;
+    height:480px;
+  }
+
+  .ipadBottleBox
+  {
+    position: relative;
+    background-color: rgba(255,255,255,.7);
+    width:25%;
+    animation: fading 5s infinite;
+  }
+
+  .ipadBottleBox:nth-of-type(2)
+  {
+    animation-delay: -3s;
+  }
+
+  .ipadBottleBox:nth-of-type(3)
+  {
+    animation-delay: 2s;
+  }
+
+  .ipadBottle
+  {
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .ipadBoxButton
+  {
+    border: solid 1px #fff;
+    background-color: rgba(182,212,51,.7);
+    display: block;
+    width: 180px;
+    color: #000;
+    padding: 10px 5px;
+    font-size: 18px;
+    top:380px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    font-family: hiruzen_existregular;
+    letter-spacing: 1px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ipadBoxButton:hover
+  {
+      background-color: rgba(182,212,51,1);
+      color: #fff;
+  }
+
+  .productsWelcome
+  {
+  padding:500px 0 0 40px;
+  width: 55%;
+  }
+
+  .productGreeting
+  {
+    font-size: 32px;
+    line-height: 35px;
+  }
+
+  .productGreeting2
+  {
+    font-size: 2.5em;
+    line-height: 45px;
+  }
+
+   .loyalBut
+   {
+   	width: 300px;
+   	padding: 15px 0;
+   	font-size: 18px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   #cheers
+   {
+     margin-top: 40px;
+   }
+
+   #promoCon2
+   {
+     margin-top: 0px;
+   }
+}
+
+ @media screen and (min-width: 1140px) {
+
+   #featuredProductImage {
+     background-image: url(../images/products.jpg);
+     height:1000px;
+     margin-top: -100px;
+   }
+
+   .productsWelcome
+   {
+   padding:600px 40px 0 0px;
+   width: 50%;
+   }
+
+   .productGreeting
+   {
+     font-size: 36px;
+     line-height: 40px;
+   }
+
+   .productGreeting2
+   {
+     font-size: 3em;
+     line-height: 55px;
+   }
+
+  .ipadBottle
+  {
+    display: none;
+  }
+
+  .bottleBig
+  {
+    display: block;
+  }
+
+  #products2
+  {
+    justify-content:center;
+    background-image: url(../images/product-page-background.jpg);
+    height:500px;
+    margin-top: 60px;
+  }
+
+  .ipadBottleBox
+  {
+    margin:0 5px 0 5px;
+    text-align: center;
+  }
+
+  .ipadBoxButton
+  {
+    width: 250px;
+    padding: 10px 5px;
+    font-size: 24px;
+    top:480px;
+  }
+
+  #cheers
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .cheersPhoto
+  {
+    height:431px;
+    margin: 0;
+  }
+
+   #brewSec1
+   {
+     width:330px;
+     text-align: center;
+     margin-left: 10px;
+     margin-top: 10px;
+
+   }
+ }
+
+
+ /*//////////////////ADVERTISEMENTS PAGE/////////////////////*/
+
+ .featuredVideo{
+     margin: 0 auto;
+ }
+
+ .slideshow-container
+  {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.slides
+{
+  display: none;
+}
+
+.left, .right
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.right
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.left
+{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.fade
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 3.5s;
+  animation-name: fade;
+  animation-duration: 3.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.featuredVideo2
+{
+  padding-top: 60px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1140px) {
+
+  #promoCon
+  {
+    width:700px;
+    margin: 0px auto;
+    margin-top: 60px;
+  }
+}
+
+
+/*////////////ABOUT US PAGE ////////////*/
+
+#aboutusImage
+{
+  margin: auto;
+  margin-top: -80px;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/aboutusPro-m.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  height:516px;
+}
+
+.aboutusWelcome
+{
+  padding:240px 30px 0 0px;
+}
+
+.aboutusText
+{
+  color:#fff;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bolder;
+  font-size: 1.7em;
+  line-height: 30px;
+  letter-spacing: 2px;
+  text-shadow: -2px 2px 4px #000000;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-top: 5px;
+}
+
+#heritage
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.story1
+{
+  background-color: #698d03;
+  padding:20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.space
+{
+    margin-top: 40px;
+}
+
+.story2
+{
+  margin-top: 40px;
+  text-align: center;
+}
+
+#storyImage
+{
+height:540px;
+}
+
+.promoHead
+{
+  color: #ffffff;
+}
+
+.promoP
+{
+  margin: 20px 10px 0 10px;
+}
+
+@media screen and ( min-width: 768px) {
+
+  #aboutusImage
+  {
+    background-image: url(../images/aboutusPro.jpg);
+    height:798px;
+  }
+
+  .aboutusWelcome
+  {
+  padding:190px 100px 0 0;
+  }
+
+  .aboutusText
+  {
+    font-size: 2.5em;
+    line-height: 45px;
+  }
+
+  #storyImage
+  {
+  margin-bottom: 40px;
+  margin-top: 20px;
+  }
+}
+
+@media screen and ( min-width: 1140px) {
+
+  #aboutusImage
+  {
+  margin-top: -100px;
+  }
+
+  .aboutusText
+  {
+    font-size: 3em;
+    line-height: 55px;
+  }
+
+  .story1
+  {
+    width:700px;
+    margin: 0px auto;
+    margin-top: 60px;
+  }
+
+  #heritage
+  {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .storyDesktop
+  {
+    width:320px;
+    margin: 10px 0 0 0;
+    height: 450px;
+  }
+
+  #storyImage
+  {
+  margin-top: 10px;
+  margin-left: 10px;
+  }
+
+  .story2
+  {
+    width:700px;
+    margin: 0px auto;
+    margin-top: -60px;
+    text-align: left;
+  }
+}
+
+/*//////////////////// CONTACT US PAGE ////////////////*/
+
+#contactusImage
+{
+  margin: auto;
+  margin-top: -80px;
+  position: relative;
+  z-index: 0;
+  background-image: url(../images/contactUs-m.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+  height: 516px;
+}
+
+.contactWelcome
+{
+padding:110px 0 0 20px;
+width: 50%;
+}
+
+.contactText
+{
+  color:#e41625;
+  font-family: 'Alfa Slab One', cursive;
+  font-weight: bolder;
+  font-size: 1.7em;
+  line-height: 25px;
+  letter-spacing: 4px;
+  text-shadow: -1px 1px 2px #000000;
+  margin-bottom: 20px;
+}
+
+.contactBut
+{
+  border: solid 1px #afa4a5;
+  background-color: rgba(228,207,208,.6);
+	display: block;
+	width: 120px;
+	color: #000000;
+	padding: 10px 0;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+}
+
+.contactBut:hover
+{
+  background-color: rgba(228,207,208,.9);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.space2
+{
+  margin-top: 60px;
+}
+
+#loyalSec
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+#form
+{
+  background-color:#698d03;
+  margin-top: 60px;
+  color: #ffffff;
+  display:flex;
+  flex-direction: column;
+  padding:10px 0 30px 0;
+  text-align: center;
+}
+
+.formStructure
+{
+  margin-top: 25px;
+}
+
+.formInput
+{
+  width:80%;
+  height:50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.gender{
+  width:30px;
+	height:30px;
+  margin-bottom: 20px;
+}
+
+.textarea
+{
+  width:80%;
+  height:300px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+
+.contactRed
+{
+  text-align: center;
+}
+
+@media screen and ( min-width: 768px) {
+
+  .contactRed
+  {
+    margin-top: 20px;
+  }
+  #contactusImage
+  {
+  background-image: url(../images/contactUs.jpg);
+  height:798px;
+  }
+
+  .contactWelcome
+  {
+  padding:170px 0px 0 60px;
+  }
+
+  .contactText
+  {
+    font-size: 2.5em;
+    line-height: 45px;
+  }
+
+  .contactBut
+  {
+  	width: 150px;
+  	padding: 15px 0;
+  	font-size: 18px;
+  }
+
+  #form{
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+
+  }
+  .ipadForm
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:90%;
+    margin: auto;
+  }
+
+  .formInput
+  {
+    width:250px;
+    height:50px;
+    border-radius: 15px;
+  }
+
+  .formTextMessage
+  {
+font-size: 14px;
+  }
+}
+
+@media screen and ( min-width: 1140px) {
+
+  #contactusImage
+  {
+    margin-top: -100px;
+  }
+
+  .contactWelcome
+  {
+  padding:200px 0px 0 80px;
+  }
+
+  .contactText
+  {
+    font-size: 3em;
+    line-height: 55px;
+  }
+
+  .contactBut
+  {
+    width: 200px;
+    padding: 25px 0;
+    font-size: 22px;
+  }
+}

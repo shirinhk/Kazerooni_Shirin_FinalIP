@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/reset.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Cantata+One&family=Raleway&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>COOLA BEER CONTACT US PAGE</title>
+  </head>
+  <body>
+    <h1 class="hidden">Contact Us Page</h1>
+    <main id="container">
+      <h2 class="hidden">Main Container</h2>
+      <header id="mainHeader">
+        <div id="logo">
+          <a href="index.html"><img src="images/logo-m.png" alt="Logo"></a>
+        </div>
+        <div id="logoDesktop">
+          <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+        </div>
+        <nav id="navCon">
+          <h2 class="hidden">Main Navigation</h2>
+          <div>
+            <button id="button"></button>
+          </div>
+          <div id="burgerCon">
+            <ul id="mainNav">
+              <li class="navItem"><a href="index.html">Home</a></li>
+              <li class="navItem"><a href="products.html">Products</a></li>
+              <li class="navItem"><a href="advertisements.html">Advertisements</a></li>
+              <li class="navItem"><a href="aboutus.html">About Us</a></li>
+              <li class="navItem"><a class="current" href="contactus.html">Contact Us</a></li>
+              <li class="navItem shoppingC"><a href="index.html"><img src="images/shopping.png" alt="shoping card Icon"></a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <section id="featuredCon">
+        <h2 class="hidden">Promotional Image</h2>
+        <div id="contactusImage">
+          <div class="contactWelcome">
+            <h5 class="contactText"> Our Loyalty <br> Program</h5>
+            <a href="#" class="contactBut">Coola Discovery</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+          <h2 class="hidden">Brief Info for Loyalty</h2>
+          <div class="story1 space2">
+            <h3 class="promoHead">Who Is Loyal?</h3>
+              <p class="promoP"> All of our customers are precious and we respect deeply every one of them but only some of them
+              fit in our Loyalty Program and can take advantage of our unique promotional products.
+              Submit the Loyalty Form and you will receive an email with descriptions
+              Of loyal customers and the grade you fit in. Don’t Worry! You always can enter and even elevate your grades. You will
+              be surprised with products and benefits.
+              </p>
+              <a href="#" class="loyalBut">Loyalty Form</a>
+          </div>
+          <div class="contactRed">
+            <img src="images/contactUs2.jpg" alt="Red Hounder Bottle Picture">
+          </div>
+      </section>
+
+      <section id="loyalSec">
+        <h2 class="hidden">Importancy of Customers Info</h2>
+        <div id="brewSec">
+          <h3 class="FlavourHeading"> You Are Important</h3>
+            <p class="flavourText"> Please take a minute and fill up the form, do not hesitate to let us know if you have any suggestion
+              for our products, loyalty program or …, You are our precious customer who will be a new valuable member in only one click!
+              Don’t miss this opportunity.
+            </p>
+        </div>
+      </section>
+
+      <section id="form">
+        <h2 class="hidden">Loyalty Form</h2>
+        <form action="form.php" method="post" name="submitForm" class="formFlex">
+          <section class="ipadForm">
+            <div class="formStructure">
+              <label for="name" class="formTextNo"> Name:</label>
+              <br>
+              <input type="text" name="name" class="formInput" id="name">
+            </div>
+
+            <div class="formStructure">
+              <label for="email" class="formTextNo"> E-mail:</label>
+              <br>
+              <input type="email" name="email" class="formInput" id="email">
+            </div>
+          </section>
+
+          <section class="ipadForm">
+            <div class="formStructure">
+              <label for="region" class="formTextNo"> Region:</label>
+              <br>
+              <select name="country" id="region" class="formInput">
+                <option value="select">...</option>
+                <option value="northamerica">North America</option>
+                <option value="southamerica">South America</option>
+                <option value="centralamerica">Central America</option>
+                <option value="europe">Europe</option>
+                <option value="fareast">Far East</option>
+                <option value="middleeast">Middle East</option>
+                <option value="neareast">Near East</option>
+                <option value="southasia">Sout Asia</option>
+                <option value="northafrica">North Africa</option>
+                <option value="southafrica">South Africa</option>
+                <option value="australia">Australia</option>
+                <option value="prefer not to answer">Prefer Not to Answer</option>
+              </select>
+            </div>
+
+            <div class="formStructure">
+              <label class="formTextNo">Gender: &nbsp;&nbsp;&nbsp;</label>
+              <label for="female" class="genderText">Female</label>
+              <input type="radio" name="female" class="gender" id="female">
+              <label for="male" class="genderText">Male</label>
+              <input type="radio" name="male" class="gender" id="male">
+            </div>
+          </section>
+
+          <section class="ipadForm">
+            <div class="formStructure">
+              <label for="bottles" class="formTextMessage">How many bottles a week do You purchase:</label>
+              <br>
+              <input type="number" name="bottles" id="bottles" class="formInput">
+            </div>
+
+            <div class="formStructure">
+              <label for="income" class="formTextMessage">How many bottles a week do You purchase:</label>
+              <br>
+              <select name="income" id="income" class="formInput">
+                <option value="select">...</option>
+                <option value="Less than $12,000">Less than $12,000</option>
+                <option value="Less than $30,000">Less than $30,000</option>
+                <option value="Between 30-40k">Between 30,000$ to 40,000$</option>
+                <option value="Between 40-60k">Between 40,000$ to 60,000$</option>
+                <option value="More than 60,000$">More than 60,000$</option>
+              </select>
+            </div>
+          </section>
+
+            <div class="formStructure">
+                <label for="message" class="formTextNo">What do You want Us to know:</label>
+                <br>
+                <textarea rows="10" cols="76" name="message" id="message" class="textarea">
+                </textarea>
+            </div>
+                <button type="submit" id="submit" class="loyalBut">SUBMIT!</button>
+          </form>
+        </section>
+
+
+      <footer id="mainFooter">
+        <h2 class="hidden">Main Footer</h2>
+        <div class="footermenu">
+          <h2 class="hidden">Menu</h2>
+          <ul>
+            <li class="navItem"><a href="index.html">Home</a></li>
+            <li class="navItem"><a href="products.html">Products</a></li>
+            <li class="navItem"><a href="index.html">Advertisements</a></li>
+            <li class="navItem"><a href="index.html">About Us</a></li>
+            <li class="navItem"><a href="index.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div  class="footermenu2">
+          <ul>
+            <li class="navItem"><a href="index.html">Cookie Policy</a></li>
+            <li class="navItem"><a href="index.html">Cookie Setting</a></li>
+            <li class="navItem"><a href="index.html">Terms&Conditions</a></li>
+            <li class="navItem"><a href="index.html">Privecy Policy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="hidden">Social Media Icons</h2>
+          <ul id="socialMedia">
+            <li><a href="https://www.facebook.com/"><img src="images/facebook.png" alt="Facebook Icon"></a></li>
+            <li><a href="https://www.instagram.com/"><img src="images/instagram.png" alt="Instagram Icon"></a></li>
+            <li><a href="https://www.twitter.com/"><img src="images/twitter.png" alt="Twitter Icon"></a></li>
+            <li><a href="https://www.youtube.com/"><img src="images/youtube.png" alt="Youtube Icon"></a></li>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+  <script src="js/main.js"></script>
+  </body>
+  </html>
